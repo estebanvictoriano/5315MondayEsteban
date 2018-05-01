@@ -19,11 +19,10 @@
              $(xml).find('data').each(function(){  
               t.row.add( [
                 $(this).find('name').text(),
-                $(this).find('designation').text(),
-                $(this).find('office').text(),
-                $(this).find('extension').text(),
-                $(this).find('joining_date').text(),
-                $(this).find('salary').text()
+                $(this).find('sub-species').text(),
+                $(this).find('last_seen_at').text(),
+                $(this).find('birth_date').text(),
+                $(this).find('bounty').text()
               ] ).draw( false );
              });
             }
@@ -37,22 +36,20 @@
     <thead>
         <tr>
             <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+            <th>Sub-species</th>
+            <th>Last Seen At</th>
+            <th>Birth Date</th>
+            <th>Bounty</th>
         </tr>
     </thead>
 
     <tfoot>
         <tr>
             <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+            <th>Sub-species</th>
+            <th>Last Seen At</th>
+            <th>Birth Date</th>
+            <th>Bounty</th>
         </tr>
     </tfoot>
   </table>
